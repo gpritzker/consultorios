@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  calle: MyString
+  localidad: MyString
+  nro: 1
+  piso: 1
+  entreCalles: MyString
+  manzana: 1
+  lote: 1
+
+two:
+  calle: MyString
+  localidad: MyString
+  nro: 1
+  piso: 1
+  entreCalles: MyString
+  manzana: 1
+  lote: 1

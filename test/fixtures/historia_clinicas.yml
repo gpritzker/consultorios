@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  profesional_id: 1
+  practica_id: 1
+  especialidad_id: 1
+  paciente_id: 1
+
+two:
+  profesional_id: 1
+  practica_id: 1
+  especialidad_id: 1
+  paciente_id: 1

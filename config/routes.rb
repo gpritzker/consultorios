@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :direccions
+  resources :practicas
+  resources :historia_clinicas
+  resources :consultorio_ns
+  resources :especialidads
+  resources :pacientes
+  resources :profesionals
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

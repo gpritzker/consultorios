@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Calle:</strong>
+  <%= @direccion.calle %>
+</p>
+
+<p>
+  <strong>Localidad:</strong>
+  <%= @direccion.localidad %>
+</p>
+
+<p>
+  <strong>Nro:</strong>
+  <%= @direccion.nro %>
+</p>
+
+<p>
+  <strong>Piso:</strong>
+  <%= @direccion.piso %>
+</p>
+
+<p>
+  <strong>Entrecalles:</strong>
+  <%= @direccion.entreCalles %>
+</p>
+
+<p>
+  <strong>Manzana:</strong>
+  <%= @direccion.manzana %>
+</p>
+
+<p>
+  <strong>Lote:</strong>
+  <%= @direccion.lote %>
+</p>
+
+<%= link_to 'Edit', edit_direccion_path(@direccion) %> |
+<%= link_to 'Back', direccions_path %>

@@ -1,0 +1,45 @@
+<%= form_for(@direccion) do |f| %>
+  <% if @direccion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@direccion.errors.count, "error") %> prohibited this direccion from being saved:</h2>
+
+      <ul>
+      <% @direccion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :calle %><br>
+    <%= f.text_field :calle %>
+  </div>
+  <div class="field">
+    <%= f.label :localidad %><br>
+    <%= f.text_field :localidad %>
+  </div>
+  <div class="field">
+    <%= f.label :nro %><br>
+    <%= f.number_field :nro %>
+  </div>
+  <div class="field">
+    <%= f.label :piso %><br>
+    <%= f.number_field :piso %>
+  </div>
+  <div class="field">
+    <%= f.label :entreCalles %><br>
+    <%= f.text_field :entreCalles %>
+  </div>
+  <div class="field">
+    <%= f.label :manzana %><br>
+    <%= f.number_field :manzana %>
+  </div>
+  <div class="field">
+    <%= f.label :lote %><br>
+    <%= f.number_field :lote %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

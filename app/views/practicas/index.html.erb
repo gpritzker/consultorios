@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Practicas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @practicas.each do |practica| %>
+      <tr>
+        <td><%= practica.nombre %></td>
+        <td><%= practica.descripcion %></td>
+        <td><%= link_to 'Show', practica %></td>
+        <td><%= link_to 'Edit', edit_practica_path(practica) %></td>
+        <td><%= link_to 'Destroy', practica, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Practica', new_practica_path %>

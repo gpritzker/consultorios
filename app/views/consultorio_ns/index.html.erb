@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Consultorio Ns</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numero</th>
+      <th>Tel</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @consultorio_ns.each do |consultorio_n| %>
+      <tr>
+        <td><%= consultorio_n.numero %></td>
+        <td><%= consultorio_n.tel %></td>
+        <td><%= link_to 'Show', consultorio_n %></td>
+        <td><%= link_to 'Edit', edit_consultorio_n_path(consultorio_n) %></td>
+        <td><%= link_to 'Destroy', consultorio_n, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Consultorio n', new_consultorio_n_path %>

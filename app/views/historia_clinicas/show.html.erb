@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Profesional:</strong>
+  <%= @historia_clinica.profesional_id %>
+</p>
+
+<p>
+  <strong>Practica:</strong>
+  <%= @historia_clinica.practica_id %>
+</p>
+
+<p>
+  <strong>Especialidad:</strong>
+  <%= @historia_clinica.especialidad_id %>
+</p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @historia_clinica.paciente_id %>
+</p>
+
+<%= link_to 'Edit', edit_historia_clinica_path(@historia_clinica) %> |
+<%= link_to 'Back', historia_clinicas_path %>
